@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\3-Infrastructure\DigitalEcom.Infrastructure\DigitalEcom.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\5-Commons\DigitalEcom.Commons\DigitalEcom.Commons.csproj" />
+  </ItemGroup>
+
+</Project>
