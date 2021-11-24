@@ -1,6 +1,8 @@
+using DigitalEcom.Infrastructure.Models;
+
 namespace DigitalEcom.Domain.Core
 {
-    public class District
+    public class District : EntityBase
     {
         public District() { }
 

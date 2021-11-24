@@ -23,19 +23,13 @@ namespace DigitalEcom.Domain.Core
 
         public Widget Widget { get; private set; }
 
-        public int DisplayOrder { get; [rivate set;] }
+        public int DisplayOrder { get; private set; }
 
         public string Data { get; private set; }
 
         public string HtmlData { get; private set; }
 
-        public bool IsPublished
-        {
-            get
-            {
-                return PublishStart.HasValue && PublishStart.Value < DateTimeOffset.Now && (!PublishEnd.HasValue || PublishEnd.Value > DateTimeOffset.Now);
-            }
-        }
+        
 
 
     }

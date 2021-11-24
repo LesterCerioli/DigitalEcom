@@ -16,37 +16,37 @@ namespace DigitalEcom.Domain.Core
 
         public const string SettingsDataKey = "Settings";
 
-        public Guid UserGuid { get; set; }
+        public Guid UserGuid { get; private set; }
 
-        public string FullName { get; set; }
+        public string FullName { get; private set; }
 
-        public long? VendorId { get; set; }
+        public long? VendorId { get; private set; }
 
-        public bool IsDeleted { get; set; }
+        public bool IsDeleted { get; private set; }
 
-        public DateTimeOffset CreatedOn { get; set; }
+        public DateTimeOffset CreatedOn { get; private set; }
 
-        public DateTimeOffset LatestUpdatedOn { get; set; }
+        public DateTimeOffset LatestUpdatedOn { get; private set; }
 
-        public IList<UserAddress> UserAddresses { get; set; } = new List<UserAddress>();
+        public IList<UserAddress> UserAddresses { get; private set; } = new List<UserAddress>();
 
-        public UserAddress DefaultShippingAddress { get; set; }
+        public UserAddress DefaultShippingAddress { get; private set; }
 
-        public long? DefaultShippingAddressId { get; set; }
+        public long? DefaultShippingAddressId { get; private set; }
 
-        public UserAddress DefaultBillingAddress { get; set; }
+        public UserAddress DefaultBillingAddress { get; private set; }
 
-        public long? DefaultBillingAddressId { get; set; }
+        public long? DefaultBillingAddressId { get; private set; }
 
-        public string RefreshTokenHash { get; set; }
+        public string RefreshTokenHash { get; private set; }
 
-        public IList<UserRole> Roles { get; set; } = new List<UserRole>();
+        public IList<UserRole> Roles { get; private set; } = new List<UserRole>();
 
-        public IList<CustomerGroupUser> CustomerGroups { get; set; } = new List<CustomerGroupUser>();
+        public IList<CustomerGroupUser> CustomerGroups { get; private set; } = new List<CustomerGroupUser>();
 
-        public string Culture { get; set; }
+        public string Culture { get; private set; }
 
         /// <inheritdoc />
-        public string ExtensionData { get; set; }
+        public string ExtensionData { get; private set; }
     }
 }

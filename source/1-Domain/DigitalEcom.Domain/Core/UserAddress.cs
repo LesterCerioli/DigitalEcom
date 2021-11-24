@@ -1,4 +1,5 @@
-﻿using DigitalEcom.Infrastructure.Models;
+﻿using DigitalEcom.Domain.Enums;
+using DigitalEcom.Infrastructure.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -9,9 +9,12 @@ namespace DigitalEcom.Domain.Core
 {
     public class Country : EntityBase
     {
+        private IList<StateOrProvince> _stateOrProvinces;
+        
         public Country(long id)
         {
             Id = id;
+            _stateOrProvinces = new List<StateOrProvince>();
         }
 
         
@@ -29,6 +32,8 @@ namespace DigitalEcom.Domain.Core
 
         public bool IsDistrictEnabled { get; private set; } = true;
 
-        public IList<StateOrProvince> StatesOrProvinces { get; private set; } = new List<StateOrProvince>();
+        public IReadOnlyCollection<StateOrProvince> Stateorprovinces { get { return _stateOrProvinces.ToArray(); } }
+
+        
     }
 }
